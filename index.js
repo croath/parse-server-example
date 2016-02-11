@@ -13,8 +13,8 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '' //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || '3ee60cb60127b9d7785be9ff656b8b16',
+  masterKey: process.env.MASTER_KEY || '586303160092f581e4b0c7f733ea8c89' //Add your master key here. Keep it secret!
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
